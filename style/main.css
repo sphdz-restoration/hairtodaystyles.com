@@ -1,0 +1,292 @@
+html {
+    background-color: #97c3a4;
+}
+
+body {
+    text-align: center;
+    padding-top: 30px;
+}
+
+.master_layout {
+    margin: 0 auto;
+    text-align: left;
+    width: 800px;
+    height: 600px;
+    position: relative;
+    overflow: hidden;
+}
+
+.hair_today_layout {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 780px;
+    z-index: 2000;
+    border: 10px solid #FFF;
+    background: #766181;
+}
+
+
+.hair_today_header {
+    background-color: #FFF;
+    border-bottom: 10px solid #FFF;
+    margin-bottom: 10px;
+    height: 218px;
+    position: relative;
+    overflow: hidden;
+}
+
+.hair_today_logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.hair_today_appointment_widget {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #ffecdb;
+    width: 375px;
+    padding: 15px;
+    height: 188px;
+    text-align: center;
+    color: #766181
+}
+
+.hair_today_form_title {
+    border-bottom: 2px solid #766181;
+    text-align: center;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+}
+
+.hair_today_form_title img {
+    display:block;
+    margin: 0 auto;
+}
+
+.hair_today_form {
+    text-align: left;
+    margin: 0 auto;
+    font-size: 14px;
+}
+
+.hair_today_form .label {
+    text-align: right;
+    font-weight: bold;
+    padding-right: 1em;
+}
+
+.hair_today_form td {
+    padding-bottom: 5px;
+}
+
+.hair_today_form .action {
+    padding-left: 1em;
+    width: 120px;
+}
+
+.hair_today_form .spinner {
+    width: 25px;
+    height: 25px;
+}
+
+
+.hair_today_form .action input,
+.hair_today_form_results input {
+    background-color: #766181;
+    color: #FFF;
+    text-transform: uppercase;
+    padding: 5px 20px;
+    border-width: 2px;
+    border-color: #dad5d9 #000 #000 #dad5d9;
+    border-style: solid;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.hair_today_form_results {
+    padding-top: 20px;
+}
+
+.hair_today_form_results .message {
+    margin-bottom: 1em;
+}
+
+.hair_today_form_results p {
+    font-size: 14px;
+    margin-bottom: 0.5em;
+}
+
+
+.hair_today_gallery {
+    height: 310px;
+    background-color: #FFF;
+    border-top: 10px solid #FFF;
+    border-bottom: 10px solid #FFF;
+    margin-bottom: 10px;
+    overflow: hidden;
+    white-space: no-wrap;
+    position: relative;
+}
+
+.hair_today_gallery .image {
+    float: left;
+    padding-right: 10px;
+}
+
+.hair_today_gallery .image img {    
+    display:block;
+}
+
+.hair_today_gallery_carousel {
+    height: 310px;
+    width: 4000px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.spray_bottle {
+    position: relative;
+}
+
+.spray_bottle a {
+    position: absolute;
+    top: 145px;
+    left: 115px;
+    width: 60px;
+    height: 50px;
+}
+
+
+/** ZIA **/
+
+.zia_layout {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 800px;
+    height: 600px;
+    z-index: 1000;
+    text-align: left;
+    background: #000 url('../media/zia/control-room-background.jpg') no-repeat center center;
+    overflow: hidden;
+    position: relative;
+}
+
+.zia_door {
+    position: absolute;
+    top: 0;
+}
+
+.zia_door_left {
+    left: 0;
+}
+
+.zia_door_right {
+    right: 0;
+}
+
+.video {
+    position: absolute;
+    top: 170px;
+    left: 238px;
+}
+
+.video img {
+    display:block;
+}
+
+
+/** ZIA LOGIN **/
+
+.zia_login_layout {
+    position: absolute;
+    top: 600px; 
+    left: 0;
+    width: 800px;
+    height: 500px;
+    padding-top: 100px;
+    z-index: 3000;
+    background-color: #000;
+    text-align: center;
+}
+
+.zia_login_title {
+    position: relative;
+}
+
+.zia_login_title img {
+    display: block;
+    margin: 0 auto 50px auto;
+}
+
+.zia_login_countdown {
+    position: absolute;
+    top: 3px;
+    left: 322px;
+    background: transparent url("../media/zia/countdown.gif") no-repeat 0px -200px;
+    width: 31px;
+    height: 20px;
+}
+
+.zia_login_form {
+    text-align: left;
+    margin: 0 auto;
+    font-size: 14px;
+    color: #00FCFF;
+}
+
+.zia_login_form .label {
+    text-align: right;
+    padding-right: 1em;
+}
+
+.zia_login_form td {
+    padding-bottom: 10px;
+}
+
+.zia_login_form .action {
+    padding-left: 1em;
+}
+
+.zia_login_form .text_input {
+    background-color: #000;
+    border: 1px solid #00FCFF;
+    color: #00FCFF;
+    padding: 3px;
+    width: 250px;
+}
+
+.zia_login_form .action_block {
+    text-align: center;
+    padding-top: 40px;
+}
+
+.zia_login_form .submit_button {
+    width: 156px;
+    height: 28px;
+    background: transparent url("../media/zia/submit-button.gif") no-repeat top left;
+    border: none;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+}
+
+.zia_access_denied {
+    position: absolute;
+    top: 190px;
+    left: 50%;
+    color: #FFF;
+    background-color: red;
+    font-size: 36px;
+    height: 250px;
+    line-height: 250px;
+    width: 500px;
+    border: 1px solid #FFF;
+    margin-left: -251px;
+    display: none;
+    text-transform: uppercase;
+}
