@@ -1,53 +1,18 @@
-// GLOBAL SOUNDS CONTAINER
-var soundList = {};
-
-
 (function () {
-
-    var thisScriptDirname = (function() {
-        var scriptTagList = document.getElementsByTagName('script');
-        var thisScriptUrl = scriptTagList[scriptTagList.length - 1].src;
-        return thisScriptUrl.replace(/\/[^\/]+$/, '');
-    }());
-
-    // CONFIGURE SOUND MANAGER AND LOAD SOUNDS
-    soundManager.url = thisScriptDirname + '/soundmanager2/';
-    soundManager.flashVersion = 9;
-    soundManager.useFlashBlock = false;
-    soundManager.onready(function() {
-        if (soundManager.supported()) {
-            soundList.doorsOpening = soundManager.createSound({
-                id: 'doorsOpening',
-                url: thisScriptDirname + '/../media/zia/door-open.mp3',
-                volume: 100
-            });
-            soundList.doorsOpening.load();
-            soundList.accessDenied = soundManager.createSound({
-                id: 'accessDenied',
-                url: thisScriptDirname + '/../media/zia/access-denied.mp3',
-                volume: 100
-            });
-            soundList.accessDenied.load();
-        } else {
-            soundList.doorsOpening = {
-                play: function () {}
-            }
-            soundList.accessDenied = {
-                play: function () {}
-            }
-        }
-    });
-
 
     jQuery(function () {
     
+            let doorsOpening = document.getElementById("doors_opening");
+            let accessDenied = document.getElementById("access_denied");
+            let computerRoomSound = document.getElementById("computer_room_sound");
+            let ziaVideo = document.getElementById("zia-video");
     
             // OPEN DOOR BEHAVIOR DEFINITION
             var openDoors = function () {
     
                 var transitionTime = 5000;
-    
-                soundList.doorsOpening.play();
+
+                doorsOpening.play();
 
                 jQuery('.zia_door_right').animate({
                     right: '-420px'
@@ -129,7 +94,7 @@ var soundList = {};
                     return;
                 }
                 isDenyAccessActive = true;
-                soundList.accessDenied.play();
+                accessDenied.play();
                 this.reset();
                 var accessDeniedMessage = jQuery('#zia_access_denied');
                 jQuery('#zia_access_denied').show('pulsate', {}, 250, function () {
@@ -151,6 +116,8 @@ var soundList = {};
                     }
                 });
                 jQuery('.zia_layout').show();
+                computerRoomSound.play();
+                ziaVideo.play();
             });
     
 
